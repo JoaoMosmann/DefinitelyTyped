@@ -8,10 +8,8 @@
 
 /// <reference types="node" />
 
-declare module 'stripe' {
-    var out: StripeNode.StripeExport;
-    export = out;
-}
+declare var out: StripeNode.StripeExport;
+export = out;
 
 declare namespace StripeNode {
     interface StripeExport extends StripeStatic {
